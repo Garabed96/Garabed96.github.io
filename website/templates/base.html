@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+	<!-- Basic Page Needs
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta charset="utf-8">
+	<title>Garo Nazarian</title>
+	<meta name="description" content="Garo Nazarian Portfolio and Blog">
+	<meta name="author" content="Garo Nazarian">
+
+  	<!-- responsive support -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- FONT
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- Star Font Awesome
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
+	<!-- CSS
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/style.css' %}?{% now 'U' %}" type="text/css">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Customized
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script src="https://vjs.zencdn.net/7.0.5/video.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    <script type="text/javascript" src="{% static 'home/csrf.js' %}?{% now 'U' %}"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+
+
+    <script type="text/javascript" src="{% static 'home/csrf.js' %}?{% now 'U' %}"></script>
+    <script type="text/javascript" src="{% static 'home/main.js' %}?{% now 'U' %}"></script>
+	<!-- Vue.js -->
+
+  </head>
+  <!--<body onload="if (document.referrer == '') self.location='/home';">-->
+
+	<body>
+       <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+        <div class="off-canvas position-left " id="my-info" data-off-canvas data-position="left">
+          <div class="row column">
+            <br>
+            <img class="thumbnail" src="https://placehold.it/550x350">
+          </div>
+            <div>
+                <ul class="menu vertical" data-smooth-scroll>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="off-canvas-content " data-off-canvas-content>
+          <div class="title-bar hide-for-large">
+            <div class="title-bar-left">
+              <span class="title-bar-title">Garo Nazarian</span>
+            </div>
+          </div>
+        </div>
+       <!-- Start Top Bar -->
+        <div class="panel top-bar hide-for-small-only">
+          <div class="top-bar-left">
+            <ul class="menu">
+              <li class="menu-text ">Garo Nazarian</li>
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="menu">
+              <li><a href="/#about">About</a></li>
+              <li><a href="/#experience">Experience</a></li>
+              <li><a href="/#projects">Projects</a></li>
+	      <!--    <li><a href="/blog">Blog</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <!-- End Top Bar -->
+
+          <div class="callout black" id="fullstackdev">
+            <div class="row column text-center">
+              <h1>Full Stack Developer</h1>
+            </div>
+          </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+          <!-- Example of selectively including files -->
+{#    <script src="js/jquery.min.js"></script> <!-- Required -->#}
+{#    <script src="js/foundation.util.mediaQuery.min.js"></script>#}
+{#    <script src="js/foundation.tabs.min.js"></script>#}
+{#    <script src="js/foundation.accordion.min.js"></script>#}
+    <script>
+      $(document).foundation();
+    </script>
+
+
+	{% block body %}
+	{% endblock %}
+
+  </body>
+</html>

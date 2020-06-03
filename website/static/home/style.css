@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,600,400);
+body{
+  transition: all 0.3s ease;
+  font-family: 'Raleway', sans-serif;
+  /*line-height: 1.6;*/
+  /*background: #efede1;*/
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+#fullstackdev{
+  background-color: #205067;
+  font-size: 2rem;
+}
+
+.topic{
+    padding: 1rem 0 0 1rem;
+    font-weight: bold;
+}
+
+#aboutStyling{
+    padding-left: 3rem;
+    font-size: 1.3rem;
+}
+
+.cappy-logo{
+    padding: 1rem 0 0 0
+}
+
+.experience_cappy, .experience_projects{
+    padding-left: 1rem;
+}
+
+
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.imdcCompany{
+    margin-bottom: 0;
+}
+
