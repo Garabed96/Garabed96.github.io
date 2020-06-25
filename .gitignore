@@ -8,7 +8,6 @@ __pycache__/
 *.so
 
 # Node modules
-*node_modules/*
 node_modules/
 
 # Distribution / packaging
