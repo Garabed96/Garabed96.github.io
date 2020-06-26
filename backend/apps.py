@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class WebsiteConfig(AppConfig):
+class BackendConfig(AppConfig):
     name = 'backend'
-    verbose_name = "WebsiteConf"
+    verbose_name = "BackendConf"
