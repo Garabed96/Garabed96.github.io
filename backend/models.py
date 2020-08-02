@@ -2,7 +2,7 @@ from django.core.files.storage import FileSystemStorage
 from django.conf import settings
 from django.db import models
 from django.utils import timezone
-
+from django import forms
 
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
@@ -16,6 +16,10 @@ class Lead(models.Model):
     email = models.EmailField()
     message = models.CharField(max_length=300)
     created_at = models.DateTimeField(auto_now_add=True)
+
+# ContactForm
+#  Simple Mail Transfer Protocol
+
 
 # # Posting images to the backend
 #

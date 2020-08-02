@@ -1,0 +1,16 @@
+.about-container{
+    padding-top:4rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.about-text-styling{
+    font-size: large;
+}
+
+.portfolioImg{
+    height: 400px;
+}
+
+.experienceItemStyling{
+    padding: 0 0 1rem 1rem;
+}

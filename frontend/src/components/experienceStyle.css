@@ -1,0 +1,18 @@
+.cappyImage{
+    max-width: 120px;
+    max-height: 85px;
+}
+
+.webmotiImage{
+    max-width: 120px;
+    max-height: 85px;
+}
+
+.experienceItemStyling{
+    font-size: large;
+}
+
+
+.paddingExperienceList{
+    padding-bottom: 1rem;
+}
