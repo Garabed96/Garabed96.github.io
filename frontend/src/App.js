@@ -4,19 +4,20 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import './appStyles.css';
+import GreetingsPage from "./components/GreetingsPage";
+import BurgerMenu, {DropdownMenu} from "./animations/BurgerMenu";
+
+import Header from "./components/Header";
 
 class App extends React.Component{
     render() {
         return (
             <div>
-                <div className="ui navbar" >
-                <Navbar />
-                </div>
-                <About />
-                <hr/>
-                <Experience />
-                <hr />
-                <Contact />
+                <DropdownMenu />
+                <Header />
+                <BurgerMenu />
+
+
             </div>
 
         );
