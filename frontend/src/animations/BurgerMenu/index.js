@@ -22,7 +22,14 @@ export const DropdownMenu = (props) => {
 // Lifting state up in React with hooks (this is how we share state)
 const MenuToggle = (props) => {
     return(
-            <p> The toggle is set to {props.toggle} </p>
+        <div className="overlay" id="myNav" style={{"height": "100%"}}>
+            <div className="overlay-content">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+        </div>
+            // <p> The toggle is set to {props.toggle} </p>
         )
 }
 
@@ -32,10 +39,6 @@ const BurgerMenu = () => {
     const [status, setStatus] = useState('close')
 
     return(
-        <div>
-            <div>
-                Example div ontop of the Burger
-            </div>
             <nav>
                 <div
                     className="BurgerMenu__container"
@@ -48,7 +51,6 @@ const BurgerMenu = () => {
                       toggle={status}  />
                 </div>
             </nav>
-        </div>
     );
 };
 

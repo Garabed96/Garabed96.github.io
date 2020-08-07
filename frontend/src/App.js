@@ -13,6 +13,13 @@ class App extends React.Component{
     render() {
         return (
             <div>
+                <div className="overlay" id="myNav" style={{"height": "100%"}}>
+                    <div className="overlay-content">
+                        <a href="#">OK this is example 1</a>
+                        <a href="#">OK this is example 1</a>
+                        <a href="#">OK this is example 1</a>
+                    </div>
+                </div>
                 <BurgerMenu />
 
 
