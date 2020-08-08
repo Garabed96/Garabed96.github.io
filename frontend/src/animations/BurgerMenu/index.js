@@ -1,37 +1,30 @@
 import React, {useState} from "react";
 import './style.scss'
 
-// set myNav height to 100%
-function getMenuDropdown(props){
-    var hamburgerStyle = '';
+// Lifting state up in React with hooks (this is how we share state)
+function GetMenuDropdown(props){
+    let hamburgerStyle = '';
     const closedStyle = {height: '100%'};
     const openStyle = {height: '0%'};
     props.status === 'open' ? hamburgerStyle = closedStyle :  hamburgerStyle = openStyle;
-    return hamburgerStyle;
+    const stylingMenu = hamburgerStyle.height;
+    return(
+            <DropdownMenu dropToggle={stylingMenu} />
+    )
 };
 
-export const DropdownMenu = (props) => {
+export const DropdownMenu = (props) =>{
     return(
-        <div style={{"height": "0%"}}>
-            {props.status}
+         <div className="overlay" id="myNav" style={{"height": `${props.dropToggle}` }}>
+             <div className="overlay-content">
+                 <a href="#">OK this is example 1</a>
+                 <a href="#">OK this is example 1</a>
+                 <a href="#">OK this is example 1</a>
+             </div>
         </div>
-
     );
 }
 
-// Lifting state up in React with hooks (this is how we share state)
-const MenuToggle = (props) => {
-    return(
-        <div className="overlay" id="myNav" style={{"height": "100%"}}>
-            <div className="overlay-content">
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-            </div>
-        </div>
-            // <p> The toggle is set to {props.toggle} </p>
-        )
-}
 
 const BurgerMenu = () => {
     // https://reactjs.org/docs/lifting-state-up.html
@@ -39,6 +32,8 @@ const BurgerMenu = () => {
     const [status, setStatus] = useState('close')
 
     return(
+        <div>
+            <GetMenuDropdown status={status} />
             <nav>
                 <div
                     className="BurgerMenu__container"
@@ -47,20 +42,14 @@ const BurgerMenu = () => {
                     <i className={status}></i>
                     <i className={status}></i>
                     <i className={status}></i>
-                    < MenuToggle
-                      toggle={status}  />
                 </div>
             </nav>
+        </div>
+
     );
 };
 
 
 export default BurgerMenu;
 
- // <div className="overlay" style={getMenuDropdown()} >
-        //         <div className="overlay-content">
-        //             <a href="#">about</a>
-        //             <a href="#">portfolio</a>
-        //             <a href="#">Contact</a>
-        //         </div>
-        // </div>
+

@@ -11,6 +11,7 @@ nav{
   transform: translate(-50%, -50%);
   width: 80px;
   cursor: pointer;
+  z-index: 1 !important;
 }
 
   i {
@@ -188,6 +189,9 @@ i + i {
   right: 35px;
   }
 }
+
+
+
 
 
 
