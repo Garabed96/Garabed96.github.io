@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import './style.scss'
+import { BrowserRouter, Route } from 'react-router-dom';
+import './style.scss';
 
 // Lifting state up in React with hooks (this is how we share state)
 function GetMenuDropdown(props){
@@ -12,6 +13,7 @@ function GetMenuDropdown(props){
             <DropdownMenu dropToggle={stylingMenu} />
     )
 };
+
 
 export const DropdownMenu = (props) =>{
     return(
