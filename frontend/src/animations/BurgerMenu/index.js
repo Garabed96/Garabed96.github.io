@@ -29,7 +29,17 @@ export const DropdownMenu = (props) =>{
 
 //  About / Portfolio / Contact Me
 export const About = () => {
-    return <div>About Page</div>
+    return(
+        <div className="aboutAlignments">
+            <div className="aboutPageStyling">
+                <h1>Hello, my name is Garo Nazarian</h1>
+              <p>I'm a professional full stack developer currently working in the Django framework, the majority of my frontend work is done
+                  using javascript and the React library.</p>
+              <p>B.Sc. in Computer Science, web development specialist.</p>
+              <p>Remotely available to work in Easter and Central Time: garonazarian09@gmail.com </p>
+            </div>
+        </div>
+    );
 };
 
 export const Portfolio = () => {

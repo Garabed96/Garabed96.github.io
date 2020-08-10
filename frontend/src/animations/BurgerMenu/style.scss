@@ -201,6 +201,28 @@ i + i {
 }
 
 
+// Home menu styling
+.aboutPageStyling{
+  font-size: 1.5rem;
+  font-family: "Adobe Garamond Pro Bold";
+  padding: 50px;
+  width: 55%;
+  margin: 20px;
+  display: inline-block;
+  color: #8a8a8a;
+  -webkit-transform: translateY(150%);
+  -ms-transform: translateY(150%);
+  transform: translateY(150%);
+}
 
+.aboutAlignments{
+  text-align: center;
+  vertical-align: middle;
+  position:relative;
+}
 
+p{
+  margin: 0;
+  padding: 0;;
+}
 
