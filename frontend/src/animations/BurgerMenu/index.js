@@ -19,12 +19,25 @@ export const DropdownMenu = (props) =>{
     return(
          <div className="overlay" id="myNav" style={{"height": `${props.dropToggle}` }}>
              <div className="overlay-content">
-                 <a href="#">OK this is example 1</a>
-                 <a href="#">OK this is example 1</a>
-                 <a href="#">OK this is example 1</a>
+                 <a className="hamburgerRoutingStyle" href="/">about</a>
+                 <a className="hamburgerRoutingStyle" href="/portfolio">portfolio</a>
+                 <a className="hamburgerRoutingStyle" href="/contact">contact me</a>
              </div>
         </div>
     );
+}
+
+//  About / Portfolio / Contact Me
+export const About = () => {
+    return <div>About Page</div>
+};
+
+export const Portfolio = () => {
+    return <div>Portfolio Page</div>
+}
+
+export const ContactMe = () => {
+    return <div>Contact Me </div>
 }
 
 
