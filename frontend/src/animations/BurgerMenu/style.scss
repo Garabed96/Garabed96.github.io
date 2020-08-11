@@ -3,6 +3,10 @@ green: #3FAF82
 
 */
 
+body{
+  text-align: center;
+}
+
 nav{
   .BurgerMenu__container {
   position: absolute;
@@ -224,5 +228,20 @@ i + i {
 p{
   margin: 0;
   padding: 0;;
+}
+
+.portfolioPageStyling{
+  width: 100%;
+  color: #8a8a8a;
+  padding: 2rem;
+  display: inline-block;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+.portfolioPageStylingGrid{
+  width: 70%;
+  margin: auto !important;
 }
 

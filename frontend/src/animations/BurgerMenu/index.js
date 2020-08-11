@@ -1,6 +1,10 @@
 import React, {useState} from "react";
 import { BrowserRouter, Route } from 'react-router-dom';
 import './style.scss';
+import WebmotiImage from "./../../media/webmoti.png"
+import PortfolioImage from "./../../media/PortfolioImg.PNG"
+import CappyImage from "./../../media/cappyimg2.PNG"
+import ThieveryImage from "./../../media/thieveryGame.png"
 
 // Lifting state up in React with hooks (this is how we share state)
 function GetMenuDropdown(props){
@@ -43,7 +47,52 @@ export const About = () => {
 };
 
 export const Portfolio = () => {
-    return <div>Portfolio Page</div>
+    return(
+        <div className="portfolioPageStyling">
+            <div className="portfolioPageStylingGrid ui two column grid">
+                <div className="column">
+                    <div className="ui fluid card">
+                        <div className="image">
+                            <img alt="webmoti image placeholder" src={WebmotiImage} />
+                        </div>
+                        <div className="content">
+                            <a className="header">webmoti</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="column">
+                    <div className="ui fluid card">
+                        <div className="image">
+                            <img src={CappyImage} alt="Cappy Project display" />
+                        </div>
+                        <div className="content">
+                            <a className="header">cappy</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="column">
+                    <div className="ui fluid card">
+                        <div className="image">
+                            <img src={ThieveryImage} alt="Thievery gameplay image" />
+                        </div>
+                        <div className="content">
+                            <a className="header">Thievery</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="column">
+                    <div className="ui fluid card">
+                        <div className="image">
+                            <img src={PortfolioImage} alt="Portfolio Image displaying project" />
+                        </div>
+                        <div className="content">
+                            <a className="header">portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export const ContactMe = () => {
