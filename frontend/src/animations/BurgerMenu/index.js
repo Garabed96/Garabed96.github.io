@@ -50,40 +50,40 @@ export const Portfolio = () => {
     return(
         <div className="portfolioPageStyling">
             <div className="portfolioPageStylingGrid ui two column grid">
-                <div className="column">
+                <div className="column smallScreenOpt">
                     <div className="ui fluid card">
                         <div className="image">
-                            <img alt="webmoti image placeholder" src={WebmotiImage} />
+                            <img className="imageStyling" alt="webmoti image placeholder" src={WebmotiImage} />
                         </div>
                         <div className="content">
                             <a className="header">webmoti</a>
                         </div>
                     </div>
                 </div>
-                <div className="column">
+                <div className="column smallScreenOpt">
                     <div className="ui fluid card">
                         <div className="image">
-                            <img src={CappyImage} alt="Cappy Project display" />
+                            <img className="imageStyling" src={CappyImage} alt="Cappy Project display" />
                         </div>
                         <div className="content">
                             <a className="header">cappy</a>
                         </div>
                     </div>
                 </div>
-                <div className="column">
+                <div className="column smallScreenOpt">
                     <div className="ui fluid card">
                         <div className="image">
-                            <img src={ThieveryImage} alt="Thievery gameplay image" />
+                            <img className="imageStyling" src={ThieveryImage} alt="Thievery gameplay image" />
                         </div>
                         <div className="content">
                             <a className="header">Thievery</a>
                         </div>
                     </div>
                 </div>
-                <div className="column">
+                <div className="column smallScreenOpt">
                     <div className="ui fluid card">
                         <div className="image">
-                            <img src={PortfolioImage} alt="Portfolio Image displaying project" />
+                            <img className="imageStyling" src={PortfolioImage} alt="Portfolio Image displaying project" />
                         </div>
                         <div className="content">
                             <a className="header">portfolio</a>
