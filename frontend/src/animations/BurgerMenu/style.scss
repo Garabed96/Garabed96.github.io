@@ -230,43 +230,6 @@ p{
   padding: 0;;
 }
 
-.portfolioPageStyling{
-  width: 100%;
-  color: #8a8a8a;
-  padding: 2rem;
-  display: inline-block;
-  -webkit-transform: translateY(30%);
-  -ms-transform: translateY(30%);
-  transform: translateY(30%);
-}
-
-.portfolioPageStylingGrid{
-  width: 100%;
-  margin: auto !important;
-}
-
-.imageStyling{
-  height: 300px !important;
-  width: 500px !important;
-}
-
-.ui.fluid.card{
-  width: 500px;
-  margin: auto;
-  cursor: pointer;
-}
-
-.column{
-}
-
-
-// Optimization for smaller screens
-
-@media (max-width: 1550px){
-  .column{
-    width: 100% !important;
-  }
-}
 
 
 

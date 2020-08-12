@@ -5,7 +5,8 @@ import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import './appStyles.css';
 import GreetingsPage from "./components/GreetingsPage";
-import BurgerMenu, {About, Portfolio, ContactMe} from "./animations/BurgerMenu";
+import BurgerMenu, {About, ContactMe} from "./animations/BurgerMenu";
+import {Portfolio} from "./components/PortfolioPage";
 import { BrowserRouter, Route } from 'react-router-dom';
 
 
