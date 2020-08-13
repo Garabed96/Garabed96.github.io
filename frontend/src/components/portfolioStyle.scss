@@ -9,17 +9,16 @@
 }
 
 .portfolioPageStylingGrid{
-  width: 100%;
   margin: auto !important;
 }
 
 .imageStyling{
-  height: 300px !important;
-  width: 500px !important;
+  height: 240px !important;
+  //width: 500px !important;
 }
 
 .ui.fluid.card{
-  width: 500px;
+  //width: 500px;
   margin: auto;
   cursor: pointer;
 }
@@ -30,8 +29,14 @@
 
 // Optimization for smaller screens
 
-@media (max-width: 1100px){
+@media (max-width: 2200px){
   .column{
-    width: 100% !important;
+    width: 50% !important;
+    padding: 2rem;
   }
+}
+
+a{
+  color: inherit;
+  padding: 1rem;
 }
