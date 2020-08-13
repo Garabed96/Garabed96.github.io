@@ -6,7 +6,8 @@ import Contact from "./components/Contact";
 import './appStyles.css';
 import GreetingsPage from "./components/GreetingsPage";
 import BurgerMenu, {About, ContactMe} from "./animations/BurgerMenu";
-import {Portfolio, WebmotiProject, CappyProject, ThieveryProject, ProjectProject} from "./components/PortfolioPage";
+import {Portfolio, CappyProject, ThieveryProject, ProjectProject} from "./components/PortfolioPage";
+import { WebmotiProject } from "./components/WebmotiProject"
 import { BrowserRouter, Route } from 'react-router-dom';
 
 

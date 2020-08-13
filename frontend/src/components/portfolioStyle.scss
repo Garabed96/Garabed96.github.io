@@ -19,7 +19,7 @@
 
 .ui.fluid.card{
   //width: 500px;
-  margin: auto;
+  margin: auto !important;
   cursor: pointer;
 }
 
@@ -29,9 +29,9 @@
 
 // Optimization for smaller screens
 
-@media (max-width: 2200px){
+@media (max-width: 1200px){
   .column{
-    width: 50% !important;
+    width: 100% !important;
     padding: 2rem;
   }
 }

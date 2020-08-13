@@ -15,7 +15,7 @@ export const Portfolio = () => {
             <div className="portfolioPageStylingGrid ui two column grid">
                 <div className="column smallScreenOpt" >
                     <a href="/webmoti-project" >
-                    <div className="ui fluid card">
+                    <div className="ui card">
                         <div className="image">
                             <img className="imageStyling" alt="webmoti image placeholder" src={WebmotiImage} />
                         </div>
@@ -27,7 +27,7 @@ export const Portfolio = () => {
                 </div>
                 <div className="column smallScreenOpt">
                     <a href="cappy-project" >
-                    <div className="ui fluid card">
+                    <div className="ui card">
                         <div className="image">
                             <img className="imageStyling" src={CappyImage} alt="Cappy Project display" />
                         </div>
@@ -40,7 +40,7 @@ export const Portfolio = () => {
                 <div className="column smallScreenOpt">
                     <a href="thievery-project">
 
-                        <div className="ui fluid card">
+                        <div className="ui card">
                             <div className="image">
                                 <img className="imageStyling" src={ThieveryImage} alt="Thievery gameplay image" />
                             </div>
@@ -52,7 +52,7 @@ export const Portfolio = () => {
                 </div>
                 <div className="column smallScreenOpt">
                     <a href="project-project">
-                        <div className="ui fluid card">
+                        <div className="ui card">
                             <div className="image">
                                 <img className="imageStyling" src={PortfolioImage} alt="Portfolio Image displaying project" />
                             </div>
@@ -62,17 +62,11 @@ export const Portfolio = () => {
                         </div>
                     </a>
                 </div>
-
             </div>
         </div>
     );
 }
 
-export const WebmotiProject = () => {
-    return(
-            <div>This is the portfolio Project page</div>
-        );
-}
 
 
 
