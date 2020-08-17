@@ -1,5 +1,10 @@
 import React from "react";
 import "./WebmotiStyle.scss"
+import { Container, Header, Message, Segment } from "semantic-ui-react";
+
+import "pure-react-carousel/dist/react-carousel.es.css";
+import WebmotiCarousel from './Carousel/Components/WebmotiCarousel'
+
 
 export const WebmotiProject = () => {
     return(
@@ -8,6 +13,15 @@ export const WebmotiProject = () => {
             <h3>Webmoti Web Application webrtc javascript on top of the nodejs framework. </h3>
             <hr />
             <p>The project image would go here </p>
+
+            {/*THE IMAGE GOES HERE*/}
+            <Container style={{ margin: 20 }}>
+                <Header  />
+            <Segment attached="bottom">
+                <WebmotiCarousel />
+            </Segment>
+            </Container>
+
             <hr />
             <h1>About this project</h1>
             <p>information about the project</p>
